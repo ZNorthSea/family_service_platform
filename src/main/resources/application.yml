@@ -54,7 +54,7 @@ spring:
       login-password: 123456
 #\u914D\u7F6Emybatis
 mybatis:
-  mapper-locations: classpath:com/study/mapper/*.xml
+  mapper-locations: classpath:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
 #sql\u8BED\u53E5\u65E5\u5FD7\u6253\u5370
