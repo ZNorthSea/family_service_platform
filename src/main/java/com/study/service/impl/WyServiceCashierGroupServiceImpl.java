@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyServiceCashierGroup;
 import com.study.mapper.WyServiceCashierGroupMapper;
-import com.study.service.WyServiceCashierGroupService;
+import com.study.service.base.WyServiceCashierGroupService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

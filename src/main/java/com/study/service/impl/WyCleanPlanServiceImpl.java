@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyCleanPlan;
 import com.study.mapper.WyCleanPlanMapper;
-import com.study.service.WyCleanPlanService;
+import com.study.service.base.WyCleanPlanService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

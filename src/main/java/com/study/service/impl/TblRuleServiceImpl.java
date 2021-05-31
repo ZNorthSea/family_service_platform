@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblRule;
 import com.study.mapper.TblRuleMapper;
-import com.study.service.TblRuleService;
+import com.study.service.base.TblRuleService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

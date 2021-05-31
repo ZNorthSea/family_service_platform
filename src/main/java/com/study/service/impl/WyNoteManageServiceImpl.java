@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyNoteManage;
 import com.study.mapper.WyNoteManageMapper;
-import com.study.service.WyNoteManageService;
+import com.study.service.base.WyNoteManageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

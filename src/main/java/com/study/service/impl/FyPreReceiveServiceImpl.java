@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fy.FyPreReceive;
 import com.study.mapper.FyPreReceiveMapper;
-import com.study.service.FyPreReceiveService;
+import com.study.service.base.FyPreReceiveService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

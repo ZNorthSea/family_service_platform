@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fc.FcCellAddbuild;
 import com.study.mapper.FcCellAddbuildMapper;
-import com.study.service.FcCellAddbuildService;
+import com.study.service.base.FcCellAddbuildService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

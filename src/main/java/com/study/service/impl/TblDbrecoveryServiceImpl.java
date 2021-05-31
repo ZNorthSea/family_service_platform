@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblDbrecovery;
 import com.study.mapper.TblDbrecoveryMapper;
-import com.study.service.TblDbrecoveryService;
+import com.study.service.base.TblDbrecoveryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

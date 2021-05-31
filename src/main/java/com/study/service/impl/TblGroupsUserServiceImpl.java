@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblGroupsUser;
 import com.study.mapper.TblGroupsUserMapper;
-import com.study.service.TblGroupsUserService;
+import com.study.service.base.TblGroupsUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

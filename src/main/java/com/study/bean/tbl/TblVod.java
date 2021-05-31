@@ -2,8 +2,9 @@ package com.study.bean.tbl;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * <p>

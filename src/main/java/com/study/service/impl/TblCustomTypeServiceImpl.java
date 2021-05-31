@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblCustomType;
 import com.study.mapper.TblCustomTypeMapper;
-import com.study.service.TblCustomTypeService;
+import com.study.service.base.TblCustomTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

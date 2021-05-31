@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblNetdiskUrl;
 import com.study.mapper.TblNetdiskUrlMapper;
-import com.study.service.TblNetdiskUrlService;
+import com.study.service.base.TblNetdiskUrlService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

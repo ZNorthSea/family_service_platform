@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblCommonLanguage;
 import com.study.mapper.TblCommonLanguageMapper;
-import com.study.service.TblCommonLanguageService;
+import com.study.service.base.TblCommonLanguageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

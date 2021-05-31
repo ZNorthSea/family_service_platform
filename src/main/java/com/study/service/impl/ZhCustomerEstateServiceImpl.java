@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.zh.ZhCustomerEstate;
 import com.study.mapper.ZhCustomerEstateMapper;
-import com.study.service.ZhCustomerEstateService;
+import com.study.service.base.ZhCustomerEstateService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

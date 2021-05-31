@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fy.FyShareUserDetail;
 import com.study.mapper.FyShareUserDetailMapper;
-import com.study.service.FyShareUserDetailService;
+import com.study.service.base.FyShareUserDetailService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

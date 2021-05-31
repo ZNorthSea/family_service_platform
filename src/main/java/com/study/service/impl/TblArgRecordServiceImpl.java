@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblArgRecord;
 import com.study.mapper.TblArgRecordMapper;
-import com.study.service.TblArgRecordService;
+import com.study.service.base.TblArgRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

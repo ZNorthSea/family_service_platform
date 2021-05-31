@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblAttupload;
 import com.study.mapper.TblAttuploadMapper;
-import com.study.service.TblAttuploadService;
+import com.study.service.base.TblAttuploadService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

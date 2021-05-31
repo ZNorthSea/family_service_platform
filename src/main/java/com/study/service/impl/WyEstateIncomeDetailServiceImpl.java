@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyEstateIncomeDetail;
 import com.study.mapper.WyEstateIncomeDetailMapper;
-import com.study.service.WyEstateIncomeDetailService;
+import com.study.service.base.WyEstateIncomeDetailService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.zh.ZhCustomerAskFix;
 import com.study.mapper.ZhCustomerAskFixMapper;
-import com.study.service.ZhCustomerAskFixService;
+import com.study.service.base.ZhCustomerAskFixService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

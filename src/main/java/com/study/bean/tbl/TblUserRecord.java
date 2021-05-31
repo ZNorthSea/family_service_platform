@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
@@ -41,7 +42,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 岗位角色
      */
-    private Integer userRole;
+    private TblRole tblRole;
 
     /**
      * 用户性别
@@ -51,7 +52,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 所属部门
      */
-    private Integer userDept;
+    private TblDept tblDept;
 
     /**
      * 职位
@@ -91,17 +92,17 @@ public class TblUserRecord implements Serializable {
     /**
      * 有效开始日期
      */
-    private LocalDateTime startDate;
+    private Date startDate;
 
     /**
      * 有效结束日期
      */
-    private LocalDateTime stopDate;
+    private Date stopDate;
 
     /**
      * 出生日期
      */
-    private LocalDateTime birthday;
+    private Date birthday;
 
     /**
      * 登陆ip规则
@@ -111,7 +112,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 入职日期
      */
-    private LocalDateTime userHiredate;
+    private Date userHiredate;
 
     /**
      * 允许发送微信
@@ -126,7 +127,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 所属公司
      */
-    private String company;
+    private TblCompany tblCompany;
 
     /**
      * 是否部门管理者
@@ -136,7 +137,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 最后登陆时间
      */
-    private LocalDateTime lastLoginDate;
+    private Date lastLoginDate;
 
     /**
      * 创建人
@@ -146,8 +147,7 @@ public class TblUserRecord implements Serializable {
     /**
      * 创建时间
      */
-    private LocalDateTime createDate;
-
+    private Date createDate;
 
     public Integer getId() {
         return id;
@@ -181,28 +181,12 @@ public class TblUserRecord implements Serializable {
         this.userType = userType;
     }
 
-    public Integer getUserRole() {
-        return userRole;
-    }
-
-    public void setUserRole(Integer userRole) {
-        this.userRole = userRole;
-    }
-
     public String getUserGender() {
         return userGender;
     }
 
     public void setUserGender(String userGender) {
         this.userGender = userGender;
-    }
-
-    public Integer getUserDept() {
-        return userDept;
-    }
-
-    public void setUserDept(Integer userDept) {
-        this.userDept = userDept;
     }
 
     public Integer getUserJob() {
@@ -261,27 +245,27 @@ public class TblUserRecord implements Serializable {
         this.isSendMsg = isSendMsg;
     }
 
-    public LocalDateTime getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(LocalDateTime startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
-    public LocalDateTime getStopDate() {
+    public Date getStopDate() {
         return stopDate;
     }
 
-    public void setStopDate(LocalDateTime stopDate) {
+    public void setStopDate(Date stopDate) {
         this.stopDate = stopDate;
     }
 
-    public LocalDateTime getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(LocalDateTime birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 
@@ -293,11 +277,11 @@ public class TblUserRecord implements Serializable {
         this.ipRule = ipRule;
     }
 
-    public LocalDateTime getUserHiredate() {
+    public Date getUserHiredate() {
         return userHiredate;
     }
 
-    public void setUserHiredate(LocalDateTime userHiredate) {
+    public void setUserHiredate(Date userHiredate) {
         this.userHiredate = userHiredate;
     }
 
@@ -317,14 +301,6 @@ public class TblUserRecord implements Serializable {
         this.remark = remark;
     }
 
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
-    }
-
     public String getIsDeptAdmin() {
         return isDeptAdmin;
     }
@@ -333,11 +309,11 @@ public class TblUserRecord implements Serializable {
         this.isDeptAdmin = isDeptAdmin;
     }
 
-    public LocalDateTime getLastLoginDate() {
+    public Date getLastLoginDate() {
         return lastLoginDate;
     }
 
-    public void setLastLoginDate(LocalDateTime lastLoginDate) {
+    public void setLastLoginDate(Date lastLoginDate) {
         this.lastLoginDate = lastLoginDate;
     }
 
@@ -349,43 +325,67 @@ public class TblUserRecord implements Serializable {
         this.createPerson = createPerson;
     }
 
-    public LocalDateTime getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(LocalDateTime createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
+    }
+
+    public TblRole getTblRole() {
+        return tblRole;
+    }
+
+    public void setTblRole(TblRole tblRole) {
+        this.tblRole = tblRole;
+    }
+
+    public TblDept getTblDept() {
+        return tblDept;
+    }
+
+    public void setTblDept(TblDept tblDept) {
+        this.tblDept = tblDept;
+    }
+
+    public TblCompany getTblCompany() {
+        return tblCompany;
+    }
+
+    public void setTblCompany(TblCompany tblCompany) {
+        this.tblCompany = tblCompany;
     }
 
     @Override
     public String toString() {
         return "TblUserRecord{" +
-        "id=" + id +
-        ", userName=" + userName +
-        ", userPassword=" + userPassword +
-        ", userType=" + userType +
-        ", userRole=" + userRole +
-        ", userGender=" + userGender +
-        ", userDept=" + userDept +
-        ", userJob=" + userJob +
-        ", userStatus=" + userStatus +
-        ", officePhone=" + officePhone +
-        ", innerPhone=" + innerPhone +
-        ", movePhone=" + movePhone +
-        ", email=" + email +
-        ", isSendMsg=" + isSendMsg +
-        ", startDate=" + startDate +
-        ", stopDate=" + stopDate +
-        ", birthday=" + birthday +
-        ", ipRule=" + ipRule +
-        ", userHiredate=" + userHiredate +
-        ", isSendWchat=" + isSendWchat +
-        ", remark=" + remark +
-        ", company=" + company +
-        ", isDeptAdmin=" + isDeptAdmin +
-        ", lastLoginDate=" + lastLoginDate +
-        ", createPerson=" + createPerson +
-        ", createDate=" + createDate +
-        "}";
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userType='" + userType + '\'' +
+                ", tblRole=" + tblRole +
+                ", userGender='" + userGender + '\'' +
+                ", tblDept=" + tblDept +
+                ", userJob=" + userJob +
+                ", userStatus='" + userStatus + '\'' +
+                ", officePhone='" + officePhone + '\'' +
+                ", innerPhone='" + innerPhone + '\'' +
+                ", movePhone='" + movePhone + '\'' +
+                ", email='" + email + '\'' +
+                ", isSendMsg='" + isSendMsg + '\'' +
+                ", startDate=" + startDate +
+                ", stopDate=" + stopDate +
+                ", birthday=" + birthday +
+                ", ipRule='" + ipRule + '\'' +
+                ", userHiredate=" + userHiredate +
+                ", isSendWchat='" + isSendWchat + '\'' +
+                ", remark='" + remark + '\'' +
+                ", tblCompany=" + tblCompany +
+                ", isDeptAdmin='" + isDeptAdmin + '\'' +
+                ", lastLoginDate=" + lastLoginDate +
+                ", createPerson='" + createPerson + '\'' +
+                ", createDate=" + createDate +
+                '}';
     }
 }

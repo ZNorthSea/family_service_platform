@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fy.FyPropertyMoneyDist;
 import com.study.mapper.FyPropertyMoneyDistMapper;
-import com.study.service.FyPropertyMoneyDistService;
+import com.study.service.base.FyPropertyMoneyDistService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyCarManage;
 import com.study.mapper.WyCarManageMapper;
-import com.study.service.WyCarManageService;
+import com.study.service.base.WyCarManageService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

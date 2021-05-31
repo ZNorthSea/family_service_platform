@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.zh.ZhRentTransfer;
 import com.study.mapper.ZhRentTransferMapper;
-import com.study.service.ZhRentTransferService;
+import com.study.service.base.ZhRentTransferService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

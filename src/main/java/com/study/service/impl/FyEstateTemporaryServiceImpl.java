@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fy.FyEstateTemporary;
 import com.study.mapper.FyEstateTemporaryMapper;
-import com.study.service.FyEstateTemporaryService;
+import com.study.service.base.FyEstateTemporaryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblLoginLog;
 import com.study.mapper.TblLoginLogMapper;
-import com.study.service.TblLoginLogService;
+import com.study.service.base.TblLoginLogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyFireExercise;
 import com.study.mapper.WyFireExerciseMapper;
-import com.study.service.WyFireExerciseService;
+import com.study.service.base.WyFireExerciseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

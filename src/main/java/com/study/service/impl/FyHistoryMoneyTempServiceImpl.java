@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fy.FyHistoryMoneyTemp;
 import com.study.mapper.FyHistoryMoneyTempMapper;
-import com.study.service.FyHistoryMoneyTempService;
+import com.study.service.base.FyHistoryMoneyTempService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fy.FyMoneyTemporary02;
 import com.study.mapper.FyMoneyTemporary02Mapper;
-import com.study.service.FyMoneyTemporary02Service;
+import com.study.service.base.FyMoneyTemporary02Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

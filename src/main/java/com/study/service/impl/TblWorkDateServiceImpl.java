@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblWorkDate;
 import com.study.mapper.TblWorkDateMapper;
-import com.study.service.TblWorkDateService;
+import com.study.service.base.TblWorkDateService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

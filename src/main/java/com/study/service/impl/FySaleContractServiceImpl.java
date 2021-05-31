@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fy.FySaleContract;
 import com.study.mapper.FySaleContractMapper;
-import com.study.service.FySaleContractService;
+import com.study.service.base.FySaleContractService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

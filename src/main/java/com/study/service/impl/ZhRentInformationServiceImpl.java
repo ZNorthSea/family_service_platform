@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.zh.ZhRentInformation;
 import com.study.mapper.ZhRentInformationMapper;
-import com.study.service.ZhRentInformationService;
+import com.study.service.base.ZhRentInformationService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

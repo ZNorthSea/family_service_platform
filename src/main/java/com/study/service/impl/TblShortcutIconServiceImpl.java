@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblShortcutIcon;
 import com.study.mapper.TblShortcutIconMapper;
-import com.study.service.TblShortcutIconService;
+import com.study.service.base.TblShortcutIconService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

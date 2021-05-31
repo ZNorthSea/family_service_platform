@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.zh.ZhConsumerComplain;
 import com.study.mapper.ZhConsumerComplainMapper;
-import com.study.service.ZhConsumerComplainService;
+import com.study.service.base.ZhConsumerComplainService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

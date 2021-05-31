@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblUserSubCompany;
 import com.study.mapper.TblUserSubCompanyMapper;
-import com.study.service.TblUserSubCompanyService;
+import com.study.service.base.TblUserSubCompanyService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

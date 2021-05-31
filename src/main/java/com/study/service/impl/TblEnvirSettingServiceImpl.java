@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblEnvirSetting;
 import com.study.mapper.TblEnvirSettingMapper;
-import com.study.service.TblEnvirSettingService;
+import com.study.service.base.TblEnvirSettingService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

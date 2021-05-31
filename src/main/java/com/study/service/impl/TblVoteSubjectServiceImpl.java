@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblVoteSubject;
 import com.study.mapper.TblVoteSubjectMapper;
-import com.study.service.TblVoteSubjectService;
+import com.study.service.base.TblVoteSubjectService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

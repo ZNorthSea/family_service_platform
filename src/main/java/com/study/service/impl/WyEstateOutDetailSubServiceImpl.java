@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyEstateOutDetailSub;
 import com.study.mapper.WyEstateOutDetailSubMapper;
-import com.study.service.WyEstateOutDetailSubService;
+import com.study.service.base.WyEstateOutDetailSubService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

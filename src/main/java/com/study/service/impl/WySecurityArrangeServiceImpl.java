@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WySecurityArrange;
 import com.study.mapper.WySecurityArrangeMapper;
-import com.study.service.WySecurityArrangeService;
+import com.study.service.base.WySecurityArrangeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

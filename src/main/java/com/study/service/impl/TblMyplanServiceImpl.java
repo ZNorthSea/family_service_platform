@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblMyplan;
 import com.study.mapper.TblMyplanMapper;
-import com.study.service.TblMyplanService;
+import com.study.service.base.TblMyplanService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

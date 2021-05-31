@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblEmployeeContactCategory;
 import com.study.mapper.TblEmployeeContactCategoryMapper;
-import com.study.service.TblEmployeeContactCategoryService;
+import com.study.service.base.TblEmployeeContactCategoryService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyGoodsInout;
 import com.study.mapper.WyGoodsInoutMapper;
-import com.study.service.WyGoodsInoutService;
+import com.study.service.base.WyGoodsInoutService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.fc.FcUnit;
 import com.study.mapper.FcUnitMapper;
-import com.study.service.FcUnitService;
+import com.study.service.base.FcUnitService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

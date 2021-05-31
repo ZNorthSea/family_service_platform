@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyCommitteeMembers;
 import com.study.mapper.WyCommitteeMembersMapper;
-import com.study.service.WyCommitteeMembersService;
+import com.study.service.base.WyCommitteeMembersService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

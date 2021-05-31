@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyRenewMsgRemindLog;
 import com.study.mapper.WyRenewMsgRemindLogMapper;
-import com.study.service.WyRenewMsgRemindLogService;
+import com.study.service.base.WyRenewMsgRemindLogService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

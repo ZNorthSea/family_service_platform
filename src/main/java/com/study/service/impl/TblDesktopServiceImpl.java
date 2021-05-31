@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblDesktop;
 import com.study.mapper.TblDesktopMapper;
-import com.study.service.TblDesktopService;
+import com.study.service.base.TblDesktopService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

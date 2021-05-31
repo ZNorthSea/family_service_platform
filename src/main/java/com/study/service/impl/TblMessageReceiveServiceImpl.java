@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblMessageReceive;
 import com.study.mapper.TblMessageReceiveMapper;
-import com.study.service.TblMessageReceiveService;
+import com.study.service.base.TblMessageReceiveService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

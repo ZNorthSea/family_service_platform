@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblVod;
 import com.study.mapper.TblVodMapper;
-import com.study.service.TblVodService;
+import com.study.service.base.TblVodService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

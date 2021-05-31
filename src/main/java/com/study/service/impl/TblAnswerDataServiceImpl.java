@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblAnswerData;
 import com.study.mapper.TblAnswerDataMapper;
-import com.study.service.TblAnswerDataService;
+import com.study.service.base.TblAnswerDataService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

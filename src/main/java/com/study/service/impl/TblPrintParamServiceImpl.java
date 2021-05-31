@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblPrintParam;
 import com.study.mapper.TblPrintParamMapper;
-import com.study.service.TblPrintParamService;
+import com.study.service.base.TblPrintParamService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblAdviceBox;
 import com.study.mapper.TblAdviceBoxMapper;
-import com.study.service.TblAdviceBoxService;
+import com.study.service.base.TblAdviceBoxService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

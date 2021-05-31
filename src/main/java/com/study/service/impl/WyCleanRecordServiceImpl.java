@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyCleanRecord;
 import com.study.mapper.WyCleanRecordMapper;
-import com.study.service.WyCleanRecordService;
+import com.study.service.base.WyCleanRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

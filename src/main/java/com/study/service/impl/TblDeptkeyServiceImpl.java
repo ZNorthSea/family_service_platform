@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblDeptkey;
 import com.study.mapper.TblDeptkeyMapper;
-import com.study.service.TblDeptkeyService;
+import com.study.service.base.TblDeptkeyService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

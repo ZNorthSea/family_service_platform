@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblTodo;
 import com.study.mapper.TblTodoMapper;
-import com.study.service.TblTodoService;
+import com.study.service.base.TblTodoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

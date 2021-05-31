@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.wy.WyPropertyTakeoverSchema;
 import com.study.mapper.WyPropertyTakeoverSchemaMapper;
-import com.study.service.WyPropertyTakeoverSchemaService;
+import com.study.service.base.WyPropertyTakeoverSchemaService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

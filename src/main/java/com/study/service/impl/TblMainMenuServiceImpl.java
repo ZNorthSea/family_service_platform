@@ -2,7 +2,7 @@ package com.study.service.impl;
 
 import com.study.bean.tbl.TblMainMenu;
 import com.study.mapper.TblMainMenuMapper;
-import com.study.service.TblMainMenuService;
+import com.study.service.base.TblMainMenuService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
