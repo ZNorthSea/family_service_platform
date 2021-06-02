@@ -19,7 +19,6 @@ public class LoginServerImpl implements LoginServer {
     @Override
     public TblUserRecord login(String username,String password) {
         TblUserRecord tblUserRecord = tblUserRecordMapper.login(username,password);
-        System.out.println(tblUserRecord);
         return tblUserRecord;
     }
 }
