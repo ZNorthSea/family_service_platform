@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface FcEstateService extends IService<FcEstate> {
 
+    Integer insertEstate(FcEstate fcEstate);
 }

@@ -14,6 +14,11 @@ public class ReturnObject {
     public ReturnObject() {
     }
 
+    public ReturnObject(String message, Object result) {
+        this.message = message;
+        this.result = result;
+    }
+
     public ReturnObject(Object result) {
         this.result = result;
     }
