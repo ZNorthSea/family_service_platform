@@ -2,6 +2,9 @@ package com.study.service.base;
 
 import com.study.bean.fc.FcUnit;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.study.velueObject.UnitMessage;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface FcUnitService extends IService<FcUnit> {
 
+    List<FcUnit> selectUnit(UnitMessage unitMessage);
+
+    Integer updateUnit(FcUnit fcUnit);
 }

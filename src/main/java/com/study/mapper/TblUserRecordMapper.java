@@ -19,7 +19,4 @@ public interface TblUserRecordMapper extends BaseMapper<TblUserRecord> {
 
     TblUserRecord login(@Param("username") String username,@Param("password") String password);
 
-    //TblUserRecord loginAll(@Param("username") String username,@Param("password") String password);
-
-
 }
