@@ -1,5 +1,6 @@
 package com.study.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.study.bean.fc.FcUnit;
 import com.study.mapper.FcUnitMapper;
 import com.study.service.base.FcUnitService;
@@ -30,6 +31,7 @@ public class FcUnitServiceImpl extends ServiceImpl<FcUnitMapper, FcUnit> impleme
         for (int i = 1; i <= unitMessage.getUnitCount();i++) {
             // 先向集合中添加数据，然后返回对象 ==> 查询功能的实现
             FcUnit fcUnit = new FcUnit();
+            System.out.println("buildingCode   ==> "+unitMessage.getBuildingCode());
             fcUnit.setBuildingCode(unitMessage.getBuildingCode());
             fcUnit.setUnitCode("U"+i);
             fcUnit.setUnitName("第"+i+"单元");
@@ -43,5 +45,13 @@ public class FcUnitServiceImpl extends ServiceImpl<FcUnitMapper, FcUnit> impleme
     public Integer updateUnit(FcUnit fcUnit) {
         int result = fcUnitMapper.updateById(fcUnit);
         return result;
+    }
+
+    @Override
+    public List<FcUnit> selectUnitByBuilding(String buildingCode) {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("building_code",buildingCode);
+        queryWrapper.select("unit_code","unit_name");
+        return fcUnitMapper.selectList(queryWrapper);
     }
 }

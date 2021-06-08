@@ -19,4 +19,6 @@ public interface FcUnitService extends IService<FcUnit> {
     List<FcUnit> selectUnit(UnitMessage unitMessage);
 
     Integer updateUnit(FcUnit fcUnit);
+
+    List<FcUnit> selectUnitByBuilding(String buildingCode);
 }

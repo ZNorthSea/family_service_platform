@@ -2,6 +2,7 @@ package com.study.service.base;
 
 import com.study.bean.fc.FcBuilding;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.study.bean.fc.FcEstate;
 
 import java.util.List;
 
@@ -18,4 +19,6 @@ public interface FcBuildingService extends IService<FcBuilding> {
     List<FcBuilding> selectBuilding(Integer buildingNumber, String estateCode);
 
     Integer updateBuilding(FcBuilding fcBuilding);
+
+    List<FcBuilding> selectBuildingByEstate(String estateCode);
 }

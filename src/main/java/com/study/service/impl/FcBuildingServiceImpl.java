@@ -1,6 +1,8 @@
 package com.study.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.study.bean.fc.FcBuilding;
+import com.study.bean.fc.FcEstate;
 import com.study.mapper.FcBuildingMapper;
 import com.study.service.base.FcBuildingService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -42,5 +44,14 @@ public class FcBuildingServiceImpl extends ServiceImpl<FcBuildingMapper, FcBuild
     public Integer updateBuilding(FcBuilding fcBuilding) {
         int result = fcBuildingMapper.updateById(fcBuilding);
         return result;
+    }
+
+    @Override
+    public List<FcBuilding> selectBuildingByEstate(String estateCode) {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("estate_code",estateCode);
+        queryWrapper.select("building_name","building_code");
+        List buildings = fcBuildingMapper.selectList(queryWrapper);
+        return buildings;
     }
 }

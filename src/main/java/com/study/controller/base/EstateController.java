@@ -3,14 +3,13 @@ package com.study.controller.base;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.extension.api.R;
 import com.study.bean.fc.FcBuilding;
+import com.study.bean.fc.FcCell;
 import com.study.bean.fc.FcEstate;
 import com.study.bean.fc.FcUnit;
 import com.study.bean.tbl.TblCompany;
 import com.study.returnJson.ReturnObject;
-import com.study.service.base.FcBuildingService;
-import com.study.service.base.FcEstateService;
-import com.study.service.base.FcUnitService;
-import com.study.service.base.TblCompanyService;
+import com.study.service.base.*;
+import com.study.velueObject.CellMessage;
 import com.study.velueObject.UnitMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -78,7 +77,6 @@ public class EstateController {
         List<FcUnit> fcUnits = new ArrayList<>();
         for (UnitMessage unitMessage : unitMessages) {
             fcUnits = fcUnitService.selectUnit(unitMessage);
-            fcUnits.forEach(System.out::println);
         }
         return JSONObject.toJSONString(new ReturnObject(fcUnits));
     }
@@ -92,6 +90,32 @@ public class EstateController {
         } else {
             return JSONObject.toJSONString(new ReturnObject("保存失败"));
         }
+    }
+
+    @Autowired
+    private FcCellService fcCellService;
+    @RequestMapping("/estate/insertCell")
+    public String insertCell(@RequestBody CellMessage[] cellMessages){
+        List<FcCell> result = fcCellService.insertCell(cellMessages);
+        return JSONObject.toJSONString(new ReturnObject(result));
+    }
+
+    @RequestMapping("/estate/selectBuildingByEstate")
+    public String selectBuildingByEstate(String estateCode){
+        List<FcBuilding> fcEstates = fcBuildingService.selectBuildingByEstate(estateCode);
+        return JSONObject.toJSONString(new ReturnObject(fcEstates));
+    }
+
+    @RequestMapping("/estate/selectUnitByBuilding")
+    public String selectUnitByBuilding(String buildingCode){
+        List<FcUnit> fcUnits = fcUnitService.selectUnitByBuilding(buildingCode);
+        return JSONObject.toJSONString(new ReturnObject(fcUnits));
+    }
+
+    @RequestMapping("/estate/selectCellByUnit")
+    public String selectCellByUnit(String unitCode){
+        List<FcCell> fcCells = fcCellService.selectCellByUnit(unitCode);
+        return JSONObject.toJSONString(new ReturnObject(fcCells));
     }
 
 }
